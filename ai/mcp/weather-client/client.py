@@ -75,9 +75,6 @@ class MCPClient:
         # Process response and handle tool calls
         final_text = []
 
-        # response.choices[0].message
-        # ChatCompletionMessage(content='I can help you get the latest alerts for New York. Let me fetch that information for you.', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageFunctionToolCall(id='call_00_iFEwLSWbpsLNZgiG5AIfWoR6', function=Function(arguments='{"state": "new york"}', name='get_alerts'), type='function', index=0)])
-
         for content in response.choices:
             print(content.finish_reason)
             if content.finish_reason == "stop":
