@@ -1,0 +1,2 @@
+cozepy
+python-dotenv
